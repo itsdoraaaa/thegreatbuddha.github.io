@@ -4,228 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        
-  
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            text-align: center;
+        }
     </style>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<!--開頭 Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bfbfbf;">
+    <a class="navbar-brand" href="#"><img style="height: 50px;" 
+    src="https://cdn-icons-png.flaticon.com/512/4163/4163873.png"></a>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bfbfbf;">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#top">首頁<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">故事</a>
-            </li> <li class="nav-item">
-                <a class="nav-link" href="#">人物介紹</a>
+                <a class="nav-link" href="#second">故事概敘</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">主題曲</a>
+                <a class="nav-link" href="#thrid">人物介紹</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#bottom">電影配樂</a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
-    
-<!-- 開頭 -->
-    <div class="container mt-3 ">
-      <div class="row ">
-        <div class="col-12 ">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-<!-- 前 -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" 
-                aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
-                aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
-                aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" 
-                aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" 
-                aria-label="Slide 3"></button>
-            </div>
-<!-- 中 -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-              <img src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2017/12/6149ddda39b44d519851847f08cdc4e2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-              <img src="https://cw1.tw/CW/opinion/images/common/old/6789_0.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-              <img src="https://images.vocus.cc/6acba082-8a32-4d27-9aee-87dc3e1c29ce.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-              <img src="https://www.cup.com.hk/wp-content/uploads/2018/01/22529003_1996220500393053_2763844448679164767_o.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-              <img src="https://www.fountain.org.tw/upload/repository/ea3a44d44139b6634994dfe3df845d7fimage_normal.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-<!-- 後 -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-         </div>
+<!-- Carousel -->
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
-      </div>
-    </div>
-
-
-
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-6 text-center">大佛普拉斯</h1>
-            <p class="lead text-center">The Great Buddha+</p>
-        </div>
-    </div>
-
-    <!-- Movie Details Section -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-              <p>年份：2017年</p>
-              <p>導演：黃信堯</p>
-              <P>時長：102分鐘</P>
-                <img src="https://www.twreporter.org/images/20220421223422-a34dfb3b2c72546061a399d17baac998-mobile.jpg" class="img-fluid" alt="Movie Poster">
-    <!-- Music -->
-              <section id="music" class="mb-5">
-                <h2>電影配樂</h2>
-                <p>片尾曲</p>
-                <p>歌名：有無</p>
-                <p>製作人：林生祥</p>
-
-                <audio controls>
-                  <source src="yt5s.io - 大佛普拉斯 電影片尾曲 有無 (128 kbps).mp3" type="audio/mpeg">
-                </audio>
-              </section>
-
-              <button class="btn btn-light" >更多配樂</button>
-
-
-            </div>
-            <div class="col-md-8">
-                <h2>故事概敘</h2>
-                <p class="section" class="text-decoration: underline">《大佛普拉斯》（The Great Buddha+）為導演黃信堯於2017年自編自導的電影，改編自2014年黃信堯入圍金馬獎最佳短片的作品《大佛》。</p>
-                <p class="section">劇情主要圍繞位於臺灣農村的「葛洛伯文創藝術中心」及其周邊人物所發生的故事，背景設定可大致切割為兩個世界觀，一組是社會底層的魯蛇人物：以四處打零工奉養老母的菜脯、拾荒者肚財、喜歡四處遊蕩又寡言的釋迦和身兼網咖、雜貨店打雜的土豆組成，他們艱難地生活於階級底層，在微不足道的地方支撐著社會；另一組是活在上層社會的人生勝利組:由藝術中心董事長黃啟文、民意代表高委員和眾多以「情婦」身分在片中出現的女人們所構成，相較於前者求活的淒苦，這一組擁有求樂的餘裕。透過電影將他們在艱難的生活中所衍伸的價值觀，和社會上層的奢靡腐敗赤裸地呼應，形成強烈的對比。</p>
-                <p class="section">電影的呈現方式本身就是個巨大的譬喻，多數時候採用黑白畫面，僅有行車紀錄器中，關乎啟文董和不同情婦活色生香的淫靡片段才轉為彩色，暗喻社會中下階層的人生是黑白的，與遙遠的花花世界產生對比。而行車紀錄器恰好是聯繫兩端的山洞，當鏡頭透過黑白世界看向繽紛的另一邊時，更顯落寞，頗有「人們的快樂立於他人的痛苦上」之感。</p>
-               
-                <h3>人物介紹</h3>
-                <ul>
-                    <li>Actor 1</li>
-                    <li>Actor 2</li>
-                    <li>Actor 3</li>
-                </ul>
-             
-            </div>
-        </div>
-    </div>
-
-<!-- 人物介紹 -->
-
-    <div class="container"> 
-      <div class="row">
-        <h>人物介紹</h>
-
-        <div class="card" style="width: 18rem;">
-            <img src="https://blog.addmusic.tw/wp-content/uploads/2017/10/s_6406b2ff06cf805d017f57748981e94d81ac506cd1a404714f0159f0d6461129_1507890609573_20170914-061115_u8366_m324452_f3cd.jpg?w=400&h=266" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text" >陳竹昇</p>
-            </div>
-          </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://blog.addmusic.tw/wp-content/uploads/2017/10/s_6406b2ff06cf805d017f57748981e94d81ac506cd1a404714f0159f0d6461129_1508134197422_.jpg?w=400&h=300" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">莊益增</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://blog.addmusic.tw/wp-content/uploads/2017/10/s_6406b2ff06cf805d017f57748981e94d81ac506cd1a404714f0159f0d6461129_1508134181921_600_87.jpg?w=400&h=296" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">張少懷</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://cdn.hk01.com/di/media/images/1002473/org/b12ebaec51b6dcfbd4fcb2d5ec8091b6.jpeg/Zo3nSV7WiDulpvCX00zUkkbhm66XutRLL8IIni_CCJ4?v=w1920"class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">戴立忍</p>
-            </div>
-        </div>
-        
-      </div>  
-    </div>
-
-
-
-
-
-    <div class="container my-5">
-      <h2 class="text-start" >電影預告片</h2>
-      <div id="movieCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-3">
-                <iframe src="https://www.youtube.com/embed/br7eRYniQ90?si=SXD_RWjHnEUWHcTJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <iframe src="https://www.youtube.com/embed/NJqVu4v5nXc?si=Kl2r7dPWJOiNtGcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <iframe src="https://www.youtube.com/embed/y8xzPfRQYZk?si=SmhxxpXoXr244ROb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                  <iframe src="https://youtu.be/br7eRYniQ90?si=aYoFC8jMN8G7QyiW" class="d-block w-100"></iframe></a>
-              </div>
-              </div>
-            </div>
+            <img src="https://d32kak7w9u5ewj.cloudfront.net/media/image/2017/12/6149ddda39b44d519851847f08cdc4e2.jpg" class="d-block w-100" alt="...">
           </div>
-          <!-- More carousel items -->
+          <div class="carousel-item">
+            <img src="https://cw1.tw/CW/opinion/images/common/old/6789_0.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.vocus.cc/6acba082-8a32-4d27-9aee-87dc3e1c29ce.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cup.com.hk/wp-content/uploads/2018/01/22529003_1996220500393053_2763844448679164767_o.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.fountain.org.tw/upload/repository/ea3a44d44139b6634994dfe3df845d7fimage_normal.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#movieCarousel" role="button" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
+  </div>
+</div>
 
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-6 text-center">大佛普拉斯</h1>
+        <p class="text-center">The Great Buddha+</p>
+    </div>
+</div>
 
-
-
-
-
-    <!-- Footer -->
-
-    </footer>
-    <footer class="footer mt-auto py-3" style="background-color:  #bfbfbf;">
-        <div class="container">
-            <span class="text-muted">&copy; 2024 MovieIntro. All rights reserved.</span>
+<!-- Movie Details Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <p>年份：2017年</p>
+            <p>導演：黃信堯</p>
+            <p>時長：102分鐘</p>
+            <img src="https://storage.googleapis.com/tghff_outland/image/photo/2019/GHFA/huge/photo_8b94c4867b06576b877e4c6df3829678.jpg" class="img-fluid" alt="Movie Poster">
+           
         </div>
-    </footer>
+        <div class="col-md-8">
+            <h2>故事概敘</h2>
+            <p class="section">《大佛普拉斯》（The Great Buddha+）為導演黃信堯於2017年自編自導的電影，改編自2014年黃信堯入圍金馬獎最佳短片的作品《大佛》。</p>
+            <p class="section">劇情主要圍繞位於臺灣農村的「葛洛伯文創藝術中心」及其周邊人物所發生的故事，背景設定可大致切割為兩個世界觀，一組是社會底層的魯蛇人物：以四處打零工奉養老母的菜脯、拾荒者肚財、喜歡四處遊蕩又寡言的釋迦和身兼網咖、雜貨店打雜的土豆組成，他們艱難地生活於階級底層，在微不足道的地方支撐著社會；另一組是活在上層社會的人生勝利組：由藝術中心董事長黃啟文、民意代表高委員和眾多以「情婦」身分在片中出現的女人們所構成，相較於前者求活的淒苦，這一組擁有求樂的餘裕。透過電影將他們在艱難的生活中所衍生的價值觀，和社會上層的奢靡腐敗赤裸地呼應，形成強烈的對比。</p>
+            <p class="section">電影的呈現方式本身就是個巨大的譬喻，多數時候採用黑白畫面，僅有行車紀錄器中，關乎啟文董和不同情婦活色生香的淫靡片段才轉為彩色，暗喻社會中下階層的人生是黑白的，與遙遠的花花世界產生對比。而行車紀錄器恰好是聯繫兩端的山洞，當鏡頭透過黑白世界看向繽紛的另一邊時，更顯落寞，頗有「人們的快樂立於他人的痛苦上」之感。</p>
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+            <!-- music -->
+        <section id="music" class="mb-5">
+            <h2>電影配樂</h2>
+            <p>片尾曲</p>
+            <ul>
+                <li>歌名：有無</li>
+                <li>製作人：林生祥</li>
+            </ul>
+            <audio controls>
+                <source src="yt5s.io - 大佛普拉斯 電影片尾曲 有無 (128 kbps).mp3" type="audio/mpeg">
+              </audio>
+          <a href="https://youtu.be/znVN6vmywPA?si=xP1VJ-R8dGR6qleN"><button class="btn btn-light m-3">更多配樂</button></a>
+        </section>
+        </div>
+    </div>
+</div>
+
+<!-- 人物介紹 -->
+<div class="container my-5"> 
+    <div class="row">
+      <h2 class="text-start">人物介紹</h2>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013049_88.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">陳竹昇</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="http://look.atmovies.com.tw/eweekly/1710/XO1710115839/20171011-o1-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">莊益增</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013054_21.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">張少懷</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013058_70.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">納豆</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013052_53.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">戴立忍</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013118_3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">陳以文</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013115_98.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">丁國琳</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013141_81.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">雷婕熙</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013112_2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">林美秀</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013120_94.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">鄭宇彤</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013144_84.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">李永豐</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013125_96.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">游安順</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013134_90.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">梁赫群</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013128_39.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">豬頭皮</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013142_46.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">小亮哥</p>
+          </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+          <img src="https://char.tw/wp-content/uploads/20181025013132_80.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">脫線</p>
+          </div>
+      </div>
+    </div>  
+  </div>
+  
+<!-- 滾動式 -->
+<div class="container my-5">
+  <h2 class="text-start">電影預告片</h2>
+  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/br7eRYniQ90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/NJqVu4v5nXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/y8xzPfRQYZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/3Yu37_vjFu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/FzNb50BIDgo?si=7Ric5cfjbGJnCt0e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.youtube.com/embed/MWjxJyVPIpU?si=VIJ6HKR2WTLQXtN6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- More carousel items can be added here -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<a href="#top"><button class="btn btn-light ">回首頁</button></a>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3" style="background-color: #bfbfbf;">
+    <div class="container">
+        <span class="text-muted">&copy; 2024 MovieIntro. All rights reserved.</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
