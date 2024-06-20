@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作者介紹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .author-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .author-img:hover {
+            transform: scale(1.1);
+        }
+        .author-row {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar, footer {
+            background-color: rgb(206, 183, 156);
+        }
+        .container {
+            background-color: azure;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .author-text {
+            text-align: center;
+        }
+    </style>
+    <!-- <script>
+        function goToPage(url) {
+            window.location.href = url;
+        }
+    </script> -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://kuku927.github.io/webfinal/home.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                      </svg>首頁<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="text-center">來看電影惹！</h1>
+    <p class="text-center">作者介紹</p>
+
+    <!-- Author 1 -->
+    <div class="row author-row" id="author1">
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="https://kuku927.github.io/webfinal/hanamaru.html"><img src="https://images.plurk.com/3o67o3ki6DqoFhJoTvzUlj.jpg" class="author-img" alt="作者1" onclick="goToPage('https://example.com/author1')"></a>
+        </div>
+        <div class="col-md-8 author-text">
+            <h4>作品名：刀劍亂舞-花丸-雪之卷</h4>
+            <h6>作者：岳采葳</h6>
+            <p>能躺著就不要站著，希望可以一直躺著看電影</p>
+        </div>
+    </div>
+
+    <!-- Author 2 -->
+    <div class="row author-row" id="author2">
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="https://itsdoraaaa.github.io/thegreatbuddha.github.io/myweb.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_XSvcpM6hdeCgCqmd5yRuoPq-Q4XbOKG9Mw&s" class="author-img" alt="作者2" onclick="goToPage('https://example.com/author2')"></a>
+        </div>
+        <div class="col-md-8 author-text">
+            <h4>作品名：大佛普拉斯The Great Buddha+</h4>
+            <h6>作者：潘曼寧</h6>
+            <p>能躺著就不要站著，希望可以一直躺著看電影</p>
+        </div>
+    </div>
+
+    <!-- Author 3 -->
+    <div class="row author-row" id="author3">
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="https://monicaxy.github.io/coco.github.io/COCO.html"><img src="https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231107/7/7/daf8015a6e0f385747c0ffaf9fa24838.jpg" class="author-img" alt="作者3" onclick="goToPage('https://example.com/author3')"></a>
+        </div>
+        <div class="col-md-8 author-text">
+            <h4>作品名：可可夜總會COCO</h4>
+            <h6>作者：范心穎</h6>
+            <p>能躺著就不要站著，希望可以一直躺著看電影</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3">
+    <div class="container text-center">
+        <span class="text-muted">© 2024 作者介紹. 版權所有.</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function goToPage(url) {
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>
